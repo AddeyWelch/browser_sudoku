@@ -16,5 +16,8 @@ var board = {
             [null, null, null, null, null, null, null, null, null],
             [null, null, null, null, null, null, null, null, null],
             [null, null, null, null, null, null, null, null, null],
-            [null, null, null, null, null, null, null, null, null]]
+            [null, null, null, null, null, null, null, null, null]],
+  addGuess: function(guess, position) {
+    this.guesses[position] = guess
+  }
 }
