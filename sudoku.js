@@ -38,9 +38,16 @@ var board = {
     var trs = document.getElementById('board').getElementsByTagName('tr');
     for (var i = 0; i < this.guesses.length; i++) {
       var tds = trs[i].getElementsByTagName('td');
-      for (var j = 0; i < this.guesses[i].length; j++) {
+      for (var j = 0; j < this.guesses[i].length; j++) {
         var value = this.guesses[i][j];
-        document.getElementsByTagName(tds[j]).value = Number(value);
+        var input = tds[j].getElementsByTagName('input');
+        input.value =  value;
+        if (this.guesses[i][j] === this.rows[i][j]) {
+          tds[j].style.backgroundColor = 'green';
+        }
+        else {
+          tds[j].style.backgroundColor = 'red';
+        }
       }
     }
   }
