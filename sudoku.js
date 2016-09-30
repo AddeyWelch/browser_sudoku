@@ -17,12 +17,6 @@ var board = {
             [null, null, null, null, null, null, null, null, null],
             [null, null, null, null, null, null, null, null, null],
             [null, null, null, null, null, null, null, null, null]],
-  addGuess: function(guess, position) {
-    document.getElementsByName('').innerText = (guess goes here);
-    var input = document.getElementsByName('userInput').value;
-    this.guesses[position] = guess;
-
-  }
 
   check: function () {
     this.readGuesses();
@@ -46,7 +40,7 @@ var board = {
       var tds = trs[i].getElementsByTagName('td');
       for (var j = 0; i < this.guesses[i].length; j++) {
         var value = this.guesses[i][j];
-        document.getElementsByTagName('')
+        document.getElementsByTagName(tds[j]).value = Number(value);
       }
     }
   }
