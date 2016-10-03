@@ -26,6 +26,9 @@ caption {
     border: 3px solid #000000;
 }
 
+#board {position: relative;
+        left: 400px;}
+
 .cell input {
     display: inline-block;
     float: left;
@@ -36,4 +39,14 @@ caption {
 
     text-align: center;
     font-size: 30px;
+}
+
+.buttonsize {
+      position: relative;
+      left: 595px;
+      top: 13px;
+      border: none;
+      width: 60px;
+      height: 40px;
+      background-color: #c38265; 
 }
