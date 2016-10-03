@@ -1,6 +1,6 @@
 caption {
   font-family: Georgia;
-  font-size: 150%;
+  font-size: 250%;
   color: #c38265;
 }
 #game {
@@ -36,9 +36,6 @@ caption {
     border: 1px solid black;
     width: 40px;
     height: 40px;
-
-    text-align: center;
-    font-size: 30px;
 }
 
 .buttonsize {
@@ -48,5 +45,5 @@ caption {
       border: none;
       width: 60px;
       height: 40px;
-      background-color: #c38265; 
+      background-color: #c38265;
 }
