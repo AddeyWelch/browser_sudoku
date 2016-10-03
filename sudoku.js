@@ -75,10 +75,10 @@ var board = {
         var input = tds[j].getElementsByTagName('input');
         input.value =  value;
         if (this.guesses[i][j] === this.rows[i][j]) {
-          tds[j].style.backgroundColor = 'green';
+          tds[j].style.backgroundColor = '#b9de67';
         }
         else {
-          tds[j].style.backgroundColor = 'red';
+          tds[j].style.backgroundColor = '#c84149';
         }
       }
     }
