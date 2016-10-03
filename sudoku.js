@@ -40,11 +40,11 @@ var board = {
     for (var i = 0; i < this.guesses.length; i++) {
       var tds = trs[i].getElementsByTagName('td');
       for (var j = 0; j < this.guesses[i].length; j++) {
-        var value = this.guesses[i][j];
-        var input = tds[j].getElementsByTagName('input');
-        input.value =  value;
+        var value = this.rows[i][j];
+        var input = tds[j].getElementsByTagName('input')[0];
         num = Math.random();
         if (num >= 0.7) {
+          input.value =  value;
           this.guesses[i][j] = this.rows[i][j];
         }
       }
