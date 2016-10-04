@@ -50,6 +50,7 @@ h1 {
 body {
     background-image: url("http://brandthunder.com/wp/wp-content/uploads/2012/10/halloween-desktop-themes.jpeg");
     background-color: #858585;
+    background-repeat: no-repeat;
 }
 table {
     border-collapse: collapse;
