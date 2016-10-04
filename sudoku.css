@@ -1,6 +1,6 @@
 @font-face {
     font-family: Terror Pro;
-    src: local('terror_pro'), url(terror_pro.tff);
+    src: url('terror_pro'), url(terror_pro.tff);
 }
 h1 {
     text-align: center;
