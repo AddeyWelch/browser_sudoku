@@ -53,6 +53,7 @@ body {
     background-color: #858585;
     background-repeat: no-repeat;
     background-size: cover;
+    background-blend-mode: soft-light;
 }
 table {
     border-collapse: collapse;
@@ -70,5 +71,5 @@ td {
 }
 
 table, tbody, tr, td, th, colgroup {
-  border-color: #ff6b00 #ff6b00 #ff6b00 #ff6b00;
+  border-color: #04d50d #04d50d #04d50d #04d50d;
 }
