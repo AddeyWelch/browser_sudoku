@@ -103,10 +103,10 @@ var board = {
         var input = tds[j].getElementsByTagName('input');
         input.value =  value;
         if (this.guesses[i][j] === this.rows[i][j]) {
-          tds[j].style.backgroundColor = '#7000ff';
+          tds[j].style.backgroundColor = '#4a1391';
         }
         else {
-          tds[j].style.backgroundColor = '#000000';
+          tds[j].style.backgroundColor = '#00cc0e';
         }
       }
     }
