@@ -1,36 +1,315 @@
 <HTML>
 <link href="sudoku.css" rel="stylesheet">
 <link href="terror_pro.tff" rel="stylesheet">
+
 <HEAD>
-  <h1>Fa-boo-lous Sudoku</h1>
+    <h1>Fa"BOO"lous Sudoku</h1>
 </HEAD>
 <style>
 
 </style>
+
 <body>
-<table id='board'>
-<!-- <caption>Base Camp Sudoku</caption> -->
-<colgroup><col><col><col>
-<colgroup><col><col><col>
-<colgroup><col><col><col>
-<tbody>
- <tr> <td><input name="digit1" style="width: 70%; height: 70%; font-size:20px; text-align: center; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit2" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit3" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"> <td><input name="digit4" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"> <td><input name="digit5" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit6" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit7" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit8" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit9" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
- <tr> <td><input name="digit10" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit11" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"> <td><input name="digit12" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit13" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit14" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"> <td><input name="digit15" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit16" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit17" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit18" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
- <tr> <td><input name="digit19" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"> <td><input name="digit20" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit21" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit22" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit23" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit24" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit25" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit26" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit27" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
-<tbody>
- <tr> <td><input name="digit28" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"> <td><input name="digit29" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit30" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit31" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit32" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"> <td><input name="digit33" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit34" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit35" style="width: 70%; height: 70%; font-size:20px; text-align: center;="1" value="" type="text"><td><input name="digit36" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
- <tr> <td><input name="digit37" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit38" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit39" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit40" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit41" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit42" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit43" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit44" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit45" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
- <tr> <td><input name="digit46" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"> <td><input name="digit47" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit48" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit49" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"> <td><input name="digit50" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit51" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"> <td><input name="digit52" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit53" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit54" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
-<tbody>
- <tr> <td><input name="digit55" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"> <td>  <input name="digit56" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td> <input name="digit57" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"> <td>  <input name="digit58" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit59" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"> <td>  <input name="digit60" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td>  <input name="digit61" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td> <input name="digit62" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"> <td><input name="digit63" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
- <tr> <td> <input name="digit64" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"> <td> <input name="digit65" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"> <td>  <input name="digit66" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td>  <input name="digit67" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit68" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"> <td>  <input name="digit69" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td>  <input name="digit70" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td>  <input name="digit71" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit72" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
- <tr> <td><input name="digit73" style="width: 70%; height: 70%; font-size:20px; text-align: center;=" value="" type="text"> <td><input name="digit74" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">  <td>  <input name="digit75" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit76" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"> <td> <input name="digit77" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"> <td><input name="digit78" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"> <td>  <input name="digit79" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td>  <input name="digit80" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text"><td><input name="digit81" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
-</table>
-<center>
-  <br />
-<input class ="buttonsize" type="button" value="Submit" style="font-size: 95%;"
-  onclick="board.check()" />
-</center>
-<script src="sudoku.js"></script>
+    <table id='board'>
+        <!-- <caption>Base Camp Sudoku</caption> -->
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <tbody>
+                <tr>
+                    <td>
+                        <input name="digit1" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
+                    </td>
+                    <td>
+                        <input name="digit2" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
+                    </td>
+                    <td>
+                        <input name="digit3" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
+                    </td>
+                    <td>
+                        <input name="digit4" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
+                    </td>
+                    <td>
+                        <input name="digit5" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
+                    </td>
+                    <td>
+                        <input name="digit6" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
+                    </td>
+                    <td>
+                        <input name="digit7" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
+                    </td>
+                    <td>
+                        <input name="digit8" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
+                    </td>
+                    <td>
+                        <input name="digit9" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input name="digit10" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
+                    </td>
+                    <td>
+                        <input name="digit11" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
+                    </td>
+                    <td>
+                        <input name="digit12" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
+                    </td>
+                    <td>
+                        <input name="digit13" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
+                    </td>
+                    <td>
+                        <input name="digit14" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
+                    </td>
+                    <td>
+                        <input name="digit15" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
+                    </td>
+                    <td>
+                        <input name="digit16" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
+                    </td>
+                    <td>
+                        <input name="digit17" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
+                    </td>
+                    <td>
+                        <input name="digit18" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input name="digit19" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
+                    </td>
+                    <td>
+                        <input name="digit20" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
+                    </td>
+                    <td>
+                        <input name="digit21" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
+                    </td>
+                    <td>
+                        <input name="digit22" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
+                    </td>
+                    <td>
+                        <input name="digit23" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
+                    </td>
+                    <td>
+                        <input name="digit24" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
+                    </td>
+                    <td>
+                        <input name="digit25" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
+                    </td>
+                    <td>
+                        <input name="digit26" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
+                    </td>
+                    <td>
+                        <input name="digit27" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
+                    </td>
+                </tr>
+            </tbody>
+            </col>
+            </col>
+            </col>
+        </colgroup>
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <tbody>
+                <tr>
+                    <td>
+                        <input name="digit28" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
+                    </td>
+                    <td>
+                        <input name="digit29" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
+                    </td>
+                    <td>
+                        <input name="digit30" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
+                    </td>
+                    <td>
+                        <input name="digit31" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
+                    </td>
+                    <td>
+                        <input name="digit32" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
+                    </td>
+                    <td>
+                        <input name="digit33" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
+                    </td>
+                    <td>
+                        <input name="digit34" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text">
+                    </td>
+                    <td>
+                        <input name="digit35" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit36" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input name="digit37" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit38" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit39" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit40" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit41" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit42" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit43" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit44" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit45" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input name="digit46" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit47" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit48" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit49" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit50" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit51" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit52" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit53" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit54" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                </tr>
+            </tbody>
+            </col>
+            </col>
+            </col>
+        </colgroup>
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <tbody>
+                <tr>
+                    <td>
+                        <input name="digit55" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit56" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit57" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit58" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit59" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit60" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit61" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit62" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit63" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input name="digit64" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit65" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit66" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit67" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit68" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit69" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit70" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit71" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit72" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input name="digit73" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit74" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit75" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit76" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit77" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit78" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit79" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit80" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                    <td>
+                        <input name="digit81" style="width: 70%; height: 70%; font-size:20px; text-align: center;" value="" type="text ">
+                    </td>
+                </tr>
+            </tbody>
+            </col>
+            </col>
+            </col>
+        </colgroup>
+
+    </table>
+    <center>
+        <br />
+        <input class="buttonsize " type="button " value="Submit" style="font-size: 95%; " onclick="board.check() " />
+    </center>
+    <script src="sudoku.js "></script>
 </body>
+
 </HTML>

@@ -3,10 +3,12 @@
     src: url('terror_pro.ttf') format('truetype');
 }
 h1 {
+    top: 5%;
     text-align: center;
     font-family: 'Terror_Pro';
     font-size: 250%;
     color: #ff6b00;
+    /*text-decoration: underline;*/
 }
 #game {
     width: 600px;
