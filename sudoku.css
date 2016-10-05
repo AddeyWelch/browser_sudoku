@@ -1,10 +1,10 @@
 @font-face {
-    font-family: Terror Pro;
-    src: url('terror_pro'), url(terror_pro.tff);
+    font-family: 'Terror_Pro';
+    src: url('terror_pro.ttf') format('truetype');
 }
 h1 {
     text-align: center;
-    font-family: Terror Pro;
+    font-family: 'Terror_Pro';
     font-size: 250%;
     color: #ff6b00;
 }
