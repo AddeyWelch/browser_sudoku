@@ -1,8 +1,12 @@
+@font-face {
+    font-family: 'Terror_Pro';
+    src: url('terror_pro.ttf') format('truetype');
+}
 h1 {
     text-align: center;
-    font-family: Georgia;
+    font-family: 'Terror_Pro';
     font-size: 250%;
-    color: #1f1c62;
+    color: #ff6b00;
 }
 #game {
     width: 600px;
@@ -19,16 +23,19 @@ h1 {
     height: 395px;
     margin-left: 20px;
     margin-top: 50px;
-    border: 3px solid #000000;
+    border: 3px solid;
+    /*border-color: #ff6b00;*/
 }
 #board {
     margin-left: auto;
     margin-right: auto;
+    border-color: red red red red;
 }
 .cell input {
     display: inline-block;
     float: left;
-    border: 1px solid black;
+    border: 1px solid;
+    border-color: #ff6b00;
     width: 40px;
     height: 40px;
 }
@@ -37,6 +44,30 @@ h1 {
     border: none;
     width: 60px;
     height: 40px;
-    color: white;
-    background-color: #1f1c62;
+    color: black;
+    background-color: #ff6b00;
+}
+body {
+    background-image: url("http://brandthunder.com/wp/wp-content/uploads/2012/10/halloween-desktop-themes.jpeg");
+    background-color: #858585;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+table {
+    border-collapse: collapse;
+    font-family: Calibri, sans-serif;
+}
+colgroup, tbody {
+    border: solid medium;
+}
+td {
+    border: solid thin;
+    height: 3em;
+    width: 3em;
+    text-align: center;
+    padding: 0;
+}
+
+table, tbody, tr, td, th, colgroup {
+  border-color: #ff6b00 #ff6b00 #ff6b00 #ff6b00;
 }
