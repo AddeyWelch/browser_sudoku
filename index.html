@@ -1,6 +1,6 @@
 <HTML>
 <link href="sudoku.css" rel="stylesheet">
-<link href="terror_pro.tff" rel="stylesheet">
+<link href='http://www.iconarchive.com/download/i67065/iconcreme/halloween/Pumpkin.ico' rel='shortcut icon' />
 
 <HEAD>
     <h1>Fa"BOO"lous Sudoku</h1>
@@ -307,8 +307,15 @@
     </table>
     <center>
         <br />
-        <input class="buttonsize " type="button " value="Submit" style="font-size: 110%; text-align: center;" onclick="board.check() " />
+        <button type="button" onclick="board.check()">Submit</button>
     </center>
+    <center>
+    <div id="popup_box">    <!-- OUR PopupBox DIV-->
+      <h3>Please refresh the page to play again!</h3>
+      <a id="popupBoxClose">Close</a>
+    </div>
+    </center>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="sudoku.js "></script>
 </body>
 

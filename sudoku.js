@@ -70,7 +70,7 @@ var board = {
         var value = this.rows[i][j];
         var input = tds[j].getElementsByTagName('input')[0];
         num = Math.random();
-        if (num >= 0.75) {
+        if (num >= .01) {
           input.value =  value;
           this.guesses[i][j] = this.rows[i][j];
         }
@@ -80,6 +80,7 @@ var board = {
   check: function () {
     this.readGuesses();
     this.markGuesses();
+    this.win_check();
   },
 
   readGuesses: function () {
@@ -102,12 +103,48 @@ var board = {
         var input = tds[j].getElementsByTagName('input');
         input.value =  value;
         if (this.guesses[i][j] === this.rows[i][j]) {
-          tds[j].style.backgroundColor = '#b9de67';
+          tds[j].style.backgroundColor = '#4a1391';
         }
         else {
-          tds[j].style.backgroundColor = '#c84149';
+          tds[j].style.backgroundColor = '#00cc0e';
         }
       }
+    }
+  },
+  win_check: function () {
+    var trs = document.getElementById('board').getElementsByTagName('tr');
+      for (var i = 0; i < trs.length; i++) {
+        var tds = trs[i].getElementsByTagName('td');
+        for (var j = 0; j < tds.length; j++) {
+          var value = tds[j].getElementsByTagName('input')[0].value;
+          if (this.guesses[i][j] !== this.rows[i][j]) {
+            return false;
+          }
+        }
+      }
+    // When site loaded, load the Popupbox First
+    loadPopupBox();
+
+    $('#popupBoxClose').click( function() {
+       unloadPopupBox();
+    });
+
+    $('#container').click( function() {
+       unloadPopupBox();
+    });
+
+    function unloadPopupBox() {    // TO Unload the Popupbox
+       $('#popup_box').fadeOut("slow");
+       $("#container").css({ // this is just for style
+           "opacity": "1"
+       });
+    }
+
+    function loadPopupBox() {    // To Load the Popupbox
+       $('#popup_box').fadeIn("fast");
+       $("#container").css({ // this is just for style
+           "opacity": "0.3"
+       });
     }
   }
 }
