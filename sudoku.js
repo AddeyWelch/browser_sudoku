@@ -70,7 +70,7 @@ var board = {
         var value = this.rows[i][j];
         var input = tds[j].getElementsByTagName('input')[0];
         num = Math.random();
-        if (num >= .05) {
+        if (num >= .01) {
           input.value =  value;
           this.guesses[i][j] = this.rows[i][j];
         }
@@ -141,7 +141,7 @@ var board = {
     }
 
     function loadPopupBox() {    // To Load the Popupbox
-       $('#popup_box').fadeIn("slow");
+       $('#popup_box').fadeIn("fast");
        $("#container").css({ // this is just for style
            "opacity": "0.3"
        });
