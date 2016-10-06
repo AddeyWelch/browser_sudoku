@@ -70,7 +70,7 @@ var board = {
         var value = this.rows[i][j];
         var input = tds[j].getElementsByTagName('input')[0];
         num = Math.random();
-        if (num >= .01) {
+        if (num >= .7) {
           input.value =  value;
           this.guesses[i][j] = this.rows[i][j];
         }
