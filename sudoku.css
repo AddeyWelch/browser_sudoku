@@ -82,7 +82,7 @@ table, tbody, tr, td, th, colgroup {
   border-color: #bfa4ff #bfa4ff #bfa4ff #bfa4ff;
 }
 
-#popup_box {
+/*#popup_box {
     display:none; /* Hide the DIV */
     position:fixed;
     _position:absolute; /* hack for internet explorer 6 */
@@ -130,4 +130,4 @@ text-decoration:none;
     position:absolute;
     color:#6fa5e2;
     font-weight:500;
-}
+}*/
