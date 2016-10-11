@@ -70,7 +70,7 @@ var board = {
         var value = this.rows[i][j];
         var input = tds[j].getElementsByTagName('input')[0];
         num = Math.random();
-        if (num >= .7) {
+        if (num >= .6) {
           input.value =  value;
           this.guesses[i][j] = this.rows[i][j];
         }
@@ -123,29 +123,29 @@ var board = {
         }
       }
     // When site loaded, load the Popupbox First
-    loadPopupBox();
-
-    $('#popupBoxClose').click( function() {
-       unloadPopupBox();
-    });
-
-    $('#container').click( function() {
-       unloadPopupBox();
-    });
-
-    function unloadPopupBox() {    // TO Unload the Popupbox
-       $('#popup_box').fadeOut("slow");
-       $("#container").css({ // this is just for style
-           "opacity": "1"
-       });
-    }
-
-    function loadPopupBox() {    // To Load the Popupbox
-       $('#popup_box').fadeIn("fast");
-       $("#container").css({ // this is just for style
-           "opacity": "0.3"
-       });
-    }
+    // loadPopupBox();
+    //
+    // $('#popupBoxClose').click( function() {
+    //    unloadPopupBox();
+    // });
+    //
+    // $('#container').click( function() {
+    //    unloadPopupBox();
+    // });
+    //
+    // function unloadPopupBox() {    // TO Unload the Popupbox
+    //    $('#popup_box').fadeOut("slow");
+    //    $("#container").css({ // this is just for style
+    //        "opacity": "1"
+    //    });
+    // }
+    //
+    // function loadPopupBox() {    // To Load the Popupbox
+    //    $('#popup_box').fadeIn("fast");
+    //    $("#container").css({ // this is just for style
+    //        "opacity": "0.3"
+    //    });
+    // }
   }
 }
 board.random_cells();
